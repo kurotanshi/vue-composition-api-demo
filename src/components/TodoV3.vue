@@ -44,7 +44,7 @@ export default {
       }
     };
     
-    //Remove: Click Handler Function
+    // Remove: Click Handler Function
     const remove = item => {
       items.value = items.value.filter(v => v !== item);
     };

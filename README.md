@@ -1,4 +1,4 @@
-# Vue Functions Based API Demo for v-tw meetup #003 @LINE TW
+# Vue Functions Based API Demo
 
 
 ## Project setup

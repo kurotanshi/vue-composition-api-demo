@@ -1,4 +1,5 @@
-# demo
+# Vue Functions Based API Demo
+
 
 ## Project setup
 ```

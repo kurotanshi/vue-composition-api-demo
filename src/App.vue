@@ -5,6 +5,14 @@
     <h3 class="title">Todo App</h3>
     <div class="container">
       <div class="comp">
+        <MousePositionV3 title="Using Vue Functions Based API"/>
+      </div>
+      <div class="comp">
+        <MousePositionV2 title="Using Vue2 option based API"/>
+      </div>
+    </div>
+    <div class="container">
+      <div class="comp">
         <TodoV3 title="Using Vue Functions Based API" />
       </div>
 
@@ -18,12 +26,16 @@
 <script>
 import TodoV3 from "./components/TodoV3.vue";
 import TodoV2 from "./components/TodoV2.vue";
+import MousePositionV3Vue from "./components/MousePositionV3.vue";
+import MousePositionV2Vue from "./components/MousePositionV2.vue";
 
 export default {
   name: "App",
   components: {
     TodoV3,
-    TodoV2
+    TodoV2,
+    MousePositionV3: MousePositionV3Vue,
+    MousePositionV2: MousePositionV2Vue,
   }
 };
 </script>

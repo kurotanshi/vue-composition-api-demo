@@ -1,8 +1,9 @@
-import { value, onMounted, onUnmounted } from "vue-function-api";
+import { ref, onMounted, onUnmounted } from '@vue/composition-api';
 
 export function useMousePosition() {
-  const x = value(0)
-  const y = value(0)
+  const x = ref(0)
+  const y = ref(0)
+  
   const update = e => {
     x.value = e.pageX
     y.value = e.pageY
@@ -17,12 +18,14 @@ export function useMousePosition() {
 }
 
 export function useMouseClickPosition() {
-  const x = value(0)
-  const y = value(0)
+  const x = ref(0)
+  const y = ref(0)
+
   const update = e => {
     x.value = e.pageX
     y.value = e.pageY
   }
+
   onMounted(() => {
     window.addEventListener('click', update)
   })

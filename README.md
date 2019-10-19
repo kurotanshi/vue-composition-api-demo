@@ -1,4 +1,4 @@
-# Vue Functions Based API Demo
+# Vue Composition API Demo
 
 
 ## Project setup

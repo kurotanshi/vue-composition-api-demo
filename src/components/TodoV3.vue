@@ -24,7 +24,7 @@
 <script>
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-import { value, onMounted } from "vue-function-api";
+import { ref, reactive, onMounted } from '@vue/composition-api'
 
 export default {
   props: {
@@ -33,8 +33,8 @@ export default {
   setup(props, context) {
 
     // Reactive value-based variables
-    const todo = value("");
-    const items = value(["Vue", "is", "Awesome"]);
+    const todo = ref("");
+    const items = ref(["Vue", "is", "Awesome"]);
 
     // Add: Click Handler Function
     const add = () => {

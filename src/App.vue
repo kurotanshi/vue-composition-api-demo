@@ -2,24 +2,29 @@
   <div id="app">
     <img class="logo" width="25%" src="./assets/logo.png">
 
-    <h3 class="title">Todo App</h3>
+    <h3 class="title">Mouse Position Detection</h3>
     <div class="container">
       <div class="comp">
-        <MousePositionV3 title="Using Vue Functions Based API"/>
+        <MousePositionV3 title="Using Vue Composition API"/>
       </div>
       <div class="comp">
         <MousePositionV2 title="Using Vue2 option based API"/>
       </div>
     </div>
+
+    <hr>
+
+    <h3 class="title">Todo App</h3>
     <div class="container">
       <div class="comp">
-        <TodoV3 title="Using Vue Functions Based API" />
+        <TodoV3 title="Using Vue Composition API" />
       </div>
 
       <div class="comp">
         <todo-v2 title="Using Vue2 option based API" />
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -47,7 +52,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px 0;
 }
 
 .logo{

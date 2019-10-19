@@ -7,10 +7,7 @@
 </template>
 
 <script>
-import {
-  mousePositionMixin,
-  mouseClickPositionMixin
-} from "../functions/Mouse";
+import { mousePositionMixin, mouseClickPositionMixin } from "../mixins/Mouse";
 
 export default {
   props: {

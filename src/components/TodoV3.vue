@@ -22,9 +22,7 @@
 
 
 <script>
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
-import { toDo } from "../composition/Todo";
+import toDo from "../composition/Todo";
 
 export default {
   props: {

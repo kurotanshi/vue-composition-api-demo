@@ -1,8 +1,6 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-vars */
 import { ref, onMounted } from 'vue';
 
-export function toDo(title) {
+export default function(title) {
   const todo = ref('');  
   const items = ref(['Vue', 'is', 'Awesome']);
   

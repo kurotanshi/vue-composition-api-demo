@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-import { ref, onMounted } from '@vue/composition-api';
+import { ref, onMounted } from 'vue';
 
 export function toDo(title) {
   const todo = ref('');  

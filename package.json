@@ -10,16 +10,17 @@
   "dependencies": {
     "@vue/composition-api": "^0.3.2",
     "core-js": "^3.6.4",
-    "vue": "^2.6.10"
+    "vue": "^3.0.0-alpha.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.1",
     "@vue/cli-plugin-eslint": "~4.3.1",
     "@vue/cli-service": "~4.3.1",
+    "@vue/compiler-sfc": "^3.0.0-alpha.11",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "eslint-plugin-vue": "^7.0.0-alpha.0",
+    "vue-cli-plugin-vue-next": "~0.1.0"
   },
   "eslintConfig": {
     "root": true,
@@ -27,8 +28,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "plugin:vue/vue3-essential"
     ],
     "rules": {},
     "parserOptions": {

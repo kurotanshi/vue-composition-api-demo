@@ -24,7 +24,6 @@
 <script>
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-import { ref, reactive, onMounted } from '@vue/composition-api';
 import { toDo } from "../composition/Todo";
 
 export default {

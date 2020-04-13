@@ -5,7 +5,7 @@
     <h3 class="title">Mouse Position Detection</h3>
     <div class="container">
       <div class="comp">
-        <MousePositionV3 title="Using Vue Composition API"/>
+        <MousePositionV3 title="Using Vue3 Composition API"/>
       </div>
       <div class="comp">
         <MousePositionV2 title="Using Vue2 option based API"/>
@@ -17,7 +17,7 @@
     <h3 class="title">Todo App</h3>
     <div class="container">
       <div class="comp">
-        <TodoV3 title="Using Vue Composition API" />
+        <TodoV3 title="Using Vue3 Composition API" />
       </div>
 
       <div class="comp">

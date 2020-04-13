@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { useMousePosition, useMouseClickPosition } from "../functions/Mouse";
+import { useMousePosition, useMouseClickPosition } from "../composition/Mouse";
 
 export default {
   props: {

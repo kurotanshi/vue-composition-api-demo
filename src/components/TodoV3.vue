@@ -24,42 +24,17 @@
 <script>
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
-import { ref, reactive, onMounted } from '@vue/composition-api'
+import { ref, reactive, onMounted } from '@vue/composition-api';
+import { toDo } from "../composition/Todo";
 
 export default {
   props: {
     title: String
   },
   setup(props, context) {
-
-    // Reactive value-based variables
-    const todo = ref("");
-    const items = ref(["Vue", "is", "Awesome"]);
-
-    // Add: Click Handler Function
-    const add = () => {
-      if (todo.value) {
-        items.value.push(todo.value);
-        todo.value = "";
-      }
-    };
+    const todo = toDo(props.title);
     
-    // Remove: Click Handler Function
-    const remove = item => {
-      items.value = items.value.filter(v => v !== item);
-    };
-
-    // mounted hook
-    onMounted( () => {
-      console.log(`onMounted ! ${ props.title }`);
-    });
-
-    return {
-      todo,
-      items,
-      add,
-      remove
-    };
+    return todo;
   }
 };
 </script>

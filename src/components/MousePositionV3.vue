@@ -13,11 +13,13 @@ export default {
   props: {
     title: String
   },
-  setup() {
+  setup (props, context) {
     const { x, y } = useMousePosition();
     const { x: x2, y: y2 } = useMouseClickPosition();
+
     return { x, y, x2, y2 };
   }
 };
 </script>
+
 
